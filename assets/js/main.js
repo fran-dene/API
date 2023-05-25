@@ -15,6 +15,6 @@ btn.addEventListener('click' ,async () => {
 
     const divisa = await getInfoCoin(`${url}/${coinSelection.value}`)
     const calculo = +clpInput.value/+divisa.serie[0].valor
-    result.innerHTML = `<p>Resultado : ${calculo}</p>`
+    result.innerHTML = `<p>Resultado : ${calculo.toFixed(2)}</p>`
 })
 
